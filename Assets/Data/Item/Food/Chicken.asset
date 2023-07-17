@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1491ee752f79b3446b77e3f238cdc8d2, type: 3}
+  m_Name: Chicken
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Chicken
+  <IsStackable>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 99
+  <ItemPrefab>k__BackingField: {fileID: 8931941550368420857, guid: c25a1bc95c00a1e4482e8d92e76b5dab,
+    type: 3}
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: f89a4c1fde78944dcb14ead5d40721bc,
+    type: 3}
+  <Description>k__BackingField: Health + 5
+  <DefaultParametersList>k__BackingField: []
+  modifireData:
+  - statModifier: {fileID: 11400000, guid: 70c2c58285b269d4da9d41468055f9ea, type: 2}
+    value: 20

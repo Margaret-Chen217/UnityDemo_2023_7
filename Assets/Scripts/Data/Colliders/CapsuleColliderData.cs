@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CapsuleColliderData
+{
+    public CapsuleCollider Collider { get; set; }
+    public Vector3 ColliderCenterInLocalSpace { get; set; }
+    public Vector3 ColliderVerticalExtents { get; private set; }
+
+    public void Initialize(GameObject gameObject)
+    {
+        if (Collider != null)
+        {
+            return;
+        }
+
+        Collider = gameObject.GetComponent<CapsuleCollider>();
+
+        UpdateColliderData();
+    }
+
+    public void UpdateColliderData()
+    {
+        ColliderCenterInLocalSpace = Collider.center;
+        //half of the size of the Bounds
+        ColliderVerticalExtents = new Vector3(0f, Collider.bounds.extents.y, 0f);
+    }
+}
