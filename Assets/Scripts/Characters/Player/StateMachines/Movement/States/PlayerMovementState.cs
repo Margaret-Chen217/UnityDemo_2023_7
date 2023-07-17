@@ -86,6 +86,13 @@ public class PlayerMovementState : IState
         }
     }
     
+    public virtual void OnTriggerExit(Collider collider)
+    {
+        if (stateMachine.Player.LayerData.IsGroundLayer(collider.gameObject.layer))
+        {
+            OnContactWithGroundExited(collider);
+        }
+    }
 
 
 
@@ -304,6 +311,17 @@ public class PlayerMovementState : IState
     protected void ResetVelocity()
     {
         stateMachine.Player.Rigidbody.velocity = Vector3.zero;
+    }
+
+    /// <summary> 
+    /// 重置竖直方向上的速度
+    /// </summary>
+    protected void ResetVerticalVelocity()
+    {
+        Vector3 playerHorizontalVelocity = GetPlayerHorizontalVelocity();
+
+        stateMachine.Player.Rigidbody.velocity = playerHorizontalVelocity;
+
     }
 
     protected virtual void OnContactWithGround(Collider collider)

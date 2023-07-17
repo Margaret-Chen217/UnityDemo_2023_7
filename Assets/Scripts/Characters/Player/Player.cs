@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
     [field: Header("Collisions")]
     [field: SerializeField]
-    public CapsuleColliderUtility ColliderUtility { get; private set; }
+    public PlayerCapsuleColliderUtility ColliderUtility { get; private set; }
 
     [field: SerializeField] public PlayerLayerData LayerData { get; private set; }
     public PlayerInput Input { get; private set; }
@@ -58,5 +58,14 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         movementStateMachine.OnTriggerEnter(collider);
+    }
+    
+    /// <summary>
+    /// 玩家脚底碰撞器离开地面
+    /// </summary>
+    /// <param name="collider"></param>
+    private void OnTriggerExit(Collider collider)
+    {
+        movementStateMachine.OnTriggerExit(collider);
     }
 }
