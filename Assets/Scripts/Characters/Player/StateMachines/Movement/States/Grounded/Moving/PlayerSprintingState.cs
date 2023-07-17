@@ -39,6 +39,7 @@ public class PlayerSprintingState : PlayerMovingState
         base.Update();
         if (keepSprint)
         {
+            //Debug.Log($"Keep Sprint: {keepSprint}");
             return;
         }
 
@@ -95,6 +96,15 @@ public class PlayerSprintingState : PlayerMovingState
     {
         base.RemoveInputActionCallbacks();
         stateMachine.Player.Input.PlayerActions.Sprint.performed -= OnSprintPerformed;
+    }
+
+    /// <summary>
+    /// 键盘按下足够长时间，进入持续冲刺状态
+    /// </summary>
+    protected override void OnFall()
+    {
+        shouldResetSprintState = false;
+        base.OnFall();
     }
 
     #endregion

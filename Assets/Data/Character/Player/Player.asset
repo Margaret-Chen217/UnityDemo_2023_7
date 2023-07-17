@@ -87,6 +87,8 @@ MonoBehaviour:
       <LightDecelerationForce>k__BackingField: 5
       <MediumDecelerationForce>k__BackingField: 5
       <HardDecelerationForce>k__BackingField: 5
+    <RollData>k__BackingField:
+      <SpeedModifier>k__BackingField: 1
   <AirborneData>k__BackingField:
     <JumpData>k__BackingField:
       <RotationData>k__BackingField:
@@ -189,4 +191,7 @@ MonoBehaviour:
       <WeakForce>k__BackingField: {x: 1, y: 5, z: 1}
       <MediumForce>k__BackingField: {x: 3.5, y: 5, z: 3.5}
       <StrongForce>k__BackingField: {x: 5, y: 5, z: 5}
-      <DecelerationForce>k__BackingField: 3
+      <DecelerationForce>k__BackingField: 1.86
+    <FallData>k__BackingField:
+      <FallSpeedLimit>k__BackingField: 15
+      <MinimunDistanceToBeConsideredHardFall>k__BackingField: 3.37

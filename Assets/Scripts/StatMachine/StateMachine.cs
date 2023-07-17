@@ -50,6 +50,6 @@ public abstract class StateMachine
 
     public void OnTriggerExit(Collider collider)
     {
-        currentState?.OnTriggerEnter(collider);
+        currentState?.OnTriggerExit(collider);
     }
 }
