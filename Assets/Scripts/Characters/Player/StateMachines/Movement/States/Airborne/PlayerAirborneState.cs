@@ -26,7 +26,7 @@ public class PlayerAirborneState : PlayerMovementState
     /// <param name="collider"></param>
     protected override void OnContactWithGround(Collider collider)
     {
-        stateMachine.ChangeState(stateMachine.IdlingState);
+        stateMachine.ChangeState(stateMachine.LightLandingState);
     }
 
     /// <summary>

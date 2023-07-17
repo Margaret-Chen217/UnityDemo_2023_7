@@ -7,6 +7,8 @@ public class PlayerFallingState : PlayerAirborneState
 {
     private PlayerFallData fallData;
 
+    private Vector3 playerPositionOnEnter;
+
     public PlayerFallingState(PlayerMovementStateMachine playerMovementStateMachine) : base(playerMovementStateMachine)
     {
         fallData = airborneData.FallData;
@@ -17,11 +19,11 @@ public class PlayerFallingState : PlayerAirborneState
     public override void Enter()
     {
         base.Enter();
+        playerPositionOnEnter = stateMachine.Player.transform.position;
         stateMachine.ReusableData.MovementSpeedModifier = 0f;
         ResetVerticalVelocity();
     }
-    
-    
+
 
     public override void PhysicsUpdate()
     {
@@ -36,7 +38,36 @@ public class PlayerFallingState : PlayerAirborneState
 
     protected override void ResetSprintState()
     {
-        
+    }
+
+    protected override void OnContactWithGround(Collider collider)
+    {
+        //TODO:添加坠落伤害
+        //开始falling高度减去接触地面时的高度
+        float fallDistance = Mathf.Abs(playerPositionOnEnter.y - stateMachine.Player.transform.position.y);
+        Debug.Log($"Fall Distance = {fallDistance}");
+
+        //LightLanding
+        if (fallDistance < fallData.MinimunDistanceToBeConsideredHardFall)
+        {
+            stateMachine.ChangeState(stateMachine.LightLandingState);
+            return;
+        }
+
+        //HardLanding
+        //玩家无输入
+        //walking State : shouldwalk且不在sprint
+
+        Debug.Log($"Movement Input = {stateMachine.ReusableData.MovementInput}");
+        if (stateMachine.ReusableData.ShouldWalk && !stateMachine.ReusableData.ShouldSprint ||
+            stateMachine.ReusableData.MovementInput == Vector2.zero)
+        {
+            stateMachine.ChangeState(stateMachine.HardLandingState);
+            return;
+        }
+
+        //Rolling
+        stateMachine.ChangeState(stateMachine.RollingState);
     }
 
     #endregion
@@ -50,7 +81,7 @@ public class PlayerFallingState : PlayerAirborneState
     private void LimitVerticalVelocity()
     {
         Vector3 playerVerticalVelocity = GetPlayerVerticalVelocity();
-        
+
         //判断当前玩家坠落速度是否小于限制速度
         if (playerVerticalVelocity.y >= -fallData.FallSpeedLimit)
         {
@@ -62,7 +93,7 @@ public class PlayerFallingState : PlayerAirborneState
         //需要加回1才能让玩家速度为-15
         Vector3 limitVelocityDiff =
             new Vector3(0f, -fallData.FallSpeedLimit - stateMachine.Player.Rigidbody.velocity.y, 0f);
-        
+
         stateMachine.Player.Rigidbody.AddForce(limitVelocityDiff, ForceMode.VelocityChange);
     }
 
