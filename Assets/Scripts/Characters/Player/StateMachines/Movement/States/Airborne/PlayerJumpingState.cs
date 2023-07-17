@@ -7,6 +7,7 @@ public class PlayerJumpingState : PlayerAirborneState
     //跳跃过程中判断是否需要旋转玩家
     
     private bool shouldKeepRotating;
+    private bool canStartFalling;
 
     private PlayerJumpData jumpData;
     public PlayerJumpingState(PlayerMovementStateMachine playerMovementStateMachine) : base(playerMovementStateMachine)
@@ -36,6 +37,25 @@ public class PlayerJumpingState : PlayerAirborneState
     {
         base.Exit();
         SetBaseRotationData();
+        canStartFalling = false;
+    }
+
+    /// <summary>
+    /// player下落速度为负，则进入falling
+    /// </summary>
+    public override void Update()
+    {
+        base.Update();
+
+        if (!canStartFalling && IsMovingUp(0f))
+        {
+            canStartFalling = true;
+        }
+        if (!canStartFalling || GetPlayerVerticalVelocity().y > 0)
+        {
+            return;
+        }
+        stateMachine.ChangeState(stateMachine.FallingState);
     }
 
     public override void PhysicsUpdate()

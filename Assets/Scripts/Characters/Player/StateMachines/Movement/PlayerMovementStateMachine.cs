@@ -9,17 +9,17 @@ public class PlayerMovementStateMachine : StateMachine
     public PlayerStateReusableData ReusableData { get; }
     public PlayerIdlingState IdlingState { get; }
 
-    public PlayerDashingState DashingState { get;  }
+    public PlayerDashingState DashingState { get; }
     public PlayerWalkingState WalkingState { get; }
     public PlayerRunningState RunningState { get; }
     public PlayerSprintingState SprintingState { get; }
 
-    public PlayerLightStoppingState LightStoppingState { get;  }
-    public PlayerMediumStoppingState MediumStoppingState { get;}
+    public PlayerLightStoppingState LightStoppingState { get; }
+    public PlayerMediumStoppingState MediumStoppingState { get; }
     public PlayerHardStoppingState HardStoppingState { get; }
 
     public PlayerJumpingState JumpingState { get; }
-    //public PlayerFallingState FallingState { get; }
+    public PlayerFallingState FallingState { get; }
 
     public PlayerMovementStateMachine(Player player)
     {
@@ -38,7 +38,6 @@ public class PlayerMovementStateMachine : StateMachine
         HardStoppingState = new PlayerHardStoppingState(this);
 
         JumpingState = new PlayerJumpingState(this);
-        //FallingState = new PlayerFallingState(this);
+        FallingState = new PlayerFallingState(this);
     }
-    
 }

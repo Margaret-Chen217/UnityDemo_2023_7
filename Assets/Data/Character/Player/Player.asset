@@ -189,4 +189,4 @@ MonoBehaviour:
       <WeakForce>k__BackingField: {x: 1, y: 5, z: 1}
       <MediumForce>k__BackingField: {x: 3.5, y: 5, z: 3.5}
       <StrongForce>k__BackingField: {x: 5, y: 5, z: 5}
-      <DecelerationForce>k__BackingField: 3
+      <DecelerationForce>k__BackingField: 1.86

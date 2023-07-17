@@ -89,6 +89,26 @@ public class PlayerGroundedState : PlayerMovementState
         return slopeSpeedModifier;
     }
 
+    protected virtual void OnFall()
+    {
+        stateMachine.ChangeState(stateMachine.FallingState);
+    }
+    
+    /// <summary>
+    /// 针对两个障碍物距离很小，但是中间有缝隙，射线检测会出问题
+    /// </summary>
+    /// <returns></returns>
+    private bool IsThereGroundUnderneat()
+    {
+        BoxCollider groundCheckCollider = stateMachine.Player.ColliderUtility.TriggerColliderData.GroundCheckCollider;
+        Vector3 groundColliderBoxCenterInWorldSpace = groundCheckCollider.bounds.center;
+
+        Collider[] overlappedGroundColliders = Physics.OverlapBox(groundColliderBoxCenterInWorldSpace,
+            groundCheckCollider.bounds.extents, groundCheckCollider.transform.rotation, stateMachine.Player.LayerData.GroundLayer, QueryTriggerInteraction.Ignore);
+
+        return overlappedGroundColliders.Length > 0;
+    }
+
     #endregion
 
     #endregion
@@ -133,8 +153,36 @@ public class PlayerGroundedState : PlayerMovementState
         //idle->run
         stateMachine.ChangeState(stateMachine.RunningState);
     }
-    
-    
+
+    protected override void OnContactWithGroundExited(Collider collider)
+    {
+        base.OnContactWithGroundExited(collider);
+
+        if (IsThereGroundUnderneat())
+        {
+            return;
+        }
+
+        //射线检测，离开地面一定距离，才认为进入Falling状态
+        //角色碰撞器中心
+        Vector3 capsuleColliderCenterInWorldSpace =
+            stateMachine.Player.ColliderUtility.CapsuleColliderData.Collider.bounds.center;
+        //射线 origin:碰撞器底部 direction:down
+        Ray downwardsRayFromCapsuleBottom =
+            new Ray(
+                capsuleColliderCenterInWorldSpace -
+                stateMachine.Player.ColliderUtility.CapsuleColliderData.ColliderVerticalExtents, Vector3.down);
+
+        //碰撞器底部发出一定长度的射线和地面层无交点，才认为是
+        if (!Physics.Raycast(downwardsRayFromCapsuleBottom, out _, movementData.GroundToFallRayDistance,
+                stateMachine.Player.LayerData.GroundLayer, QueryTriggerInteraction.Ignore))
+        {
+            OnFall();
+        }
+    }
+
+
+
     #endregion
 
     #region Input Method
