@@ -14,6 +14,13 @@ public class PlayerAirborneState : PlayerMovementState
     {
         base.Enter();
         ResetSprintState();
+        StartAnimation(stateMachine.Player.AnimationData.AirborneParameterHash);
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.AirborneParameterHash);
     }
 
     #endregion

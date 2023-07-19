@@ -14,6 +14,9 @@ public class PlayerHardLandingState : PlayerLandingState
     public override void Enter()
     {
         base.Enter();
+        
+        StartAnimation(stateMachine.Player.AnimationData.HardLandParameterHash);
+        
         stateMachine.Player.Input.PlayerActions.Movement.Disable();
         stateMachine.ReusableData.MovementSpeedModifier = 0f;
         ResetVelocity();
@@ -22,6 +25,7 @@ public class PlayerHardLandingState : PlayerLandingState
     public override void Exit()
     {
         base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.HardLandParameterHash);
         stateMachine.Player.Input.PlayerActions.Movement.Enable();
     }
 
@@ -78,6 +82,19 @@ public class PlayerHardLandingState : PlayerLandingState
     private void OnMovementStarted(InputAction.CallbackContext context)
     {
         OnMove();
+    }
+    
+    /// <summary>
+    /// 解决player在物体边缘加速下滑
+    /// </summary>
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
+        if (!IsMovingHorizongtally())
+        {
+            return;
+        }
+        ResetVelocity();
     }
 
     #endregion

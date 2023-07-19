@@ -7,6 +7,10 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInput))]
 public class Player : MonoBehaviour
 {
+    // [field: Header("Properties")]
+    // [field: SerializeField]
+    // public Health Health { get; private set; }
+
     [field: Header("Reference")]
     [field: SerializeField]
     public PlayerSO Data { get; private set; }
@@ -15,18 +19,27 @@ public class Player : MonoBehaviour
     [field: SerializeField]
     public PlayerCapsuleColliderUtility ColliderUtility { get; private set; }
 
+    [field: Header("Animations")]
+    [field: SerializeField]
+    public PlayerAnimationData AnimationData { get; private set; }
+
     [field: SerializeField] public PlayerLayerData LayerData { get; private set; }
     public PlayerInput Input { get; private set; }
     public Rigidbody Rigidbody { get; private set; }
+
+    public Animator Animator { get; private set; }
     private PlayerMovementStateMachine movementStateMachine;
     public Transform MainCameraTransform { get; private set; }
 
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
+        Animator = GetComponentInChildren<Animator>();
         Input = GetComponent<PlayerInput>();
         movementStateMachine = new PlayerMovementStateMachine(this);
         MainCameraTransform = Camera.main.transform;
+        AnimationData.Initialize();
+        // Health.Initialize();
     }
 
     private void OnValidate()
@@ -59,7 +72,7 @@ public class Player : MonoBehaviour
     {
         movementStateMachine.OnTriggerEnter(collider);
     }
-    
+
     /// <summary>
     /// 玩家脚底碰撞器离开地面
     /// </summary>
@@ -67,5 +80,20 @@ public class Player : MonoBehaviour
     private void OnTriggerExit(Collider collider)
     {
         movementStateMachine.OnTriggerExit(collider);
+    }
+
+    public void OnMovementStateAnimationEnterEvent()
+    {
+        movementStateMachine.OnAnimationEnterEvent();
+    }
+    
+    public void OnMovementStateAnimationExitEvent()
+    {
+        movementStateMachine.OnAnimationExitEvent();
+    }
+    
+    public void OnMovementStateAnimationTransitionEvent()
+    {
+        movementStateMachine.OnAnimationTransitionEvent();
     }
 }

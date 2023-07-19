@@ -14,8 +14,15 @@ public class PlayerWalkingState : PlayerMovingState
     public override void Enter()
     {
         base.Enter();
+        StartAnimation(stateMachine.Player.AnimationData.WalkParameterHash);
         stateMachine.ReusableData.MovementSpeedModifier = movementData.WalkData.SpeedModifier;
         stateMachine.ReusableData.CurrentJumpForce = airborneData.JumpData.WeakForce;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.WalkParameterHash);
     }
 
     #endregion

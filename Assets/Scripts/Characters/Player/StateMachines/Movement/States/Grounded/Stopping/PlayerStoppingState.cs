@@ -15,7 +15,14 @@ public class PlayerStoppingState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
+        StartAnimation(stateMachine.Player.AnimationData.StoppingParameterHash);
         stateMachine.ReusableData.MovementSpeedModifier = 0f;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.StoppingParameterHash);
     }
 
     public override void PhysicsUpdate()

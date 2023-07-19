@@ -5,25 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb47dffc-0e65-4eac-838a-deb6bfbf6655" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Grounded/Landing.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Grounded/Landing/PlayerRollData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Grounded/Landing/PlayerRollData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerHardLandingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerHardLandingState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLandingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLandingState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLightLandingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLightLandingState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerRollingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerRollingState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Fall.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Fall.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/HardLanding.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/HardLanding.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Rolling.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Rolling.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace/Running.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace/Running.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace/Sprinting.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace/Sprinting.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace/Walking.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/inplace/Walking.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers/PlayerAnimatorController.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Animations/PlayerAnimationData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Animations/PlayerAnimationData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Camera.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations/PlayerAnimationEventTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations/PlayerAnimationEventTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Camera.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Dash.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Dash.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/HardStop.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/HardStop.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Idle.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Jump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Jump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/LightLanding.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/LightLanding.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/LightLanding.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/LightLanding.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/LightStop.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/LightStop.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/MediumStop.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/MediumStop.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Run.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Run.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Sprint.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Sprint.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers/PlayerAnimatorController.controller.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Character/Player/Player.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Character/Player/Player.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Airborne/PlayerFallData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Airborne/PlayerFallData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AnimTestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Colliders/PlayerTriggerColliderData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Colliders/PlayerTriggerColliderData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Grounded/PlayerGroundedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Grounded/PlayerGroundedData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/PlayerMovementStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/PlayerMovementStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerAirborneState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerAirborneState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerFallingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerFallingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerJumpingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerJumpingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerHardLandingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerHardLandingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLandingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLandingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLightLandingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLightLandingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerRollingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerRollingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerMovingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerMovingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerRunningState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerRunningState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerSprintingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerSprintingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerWalkingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Moving/PlayerWalkingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerDashingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerDashingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerGroundedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerIdlingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerIdlingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Stopping/PlayerHardStoppingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Stopping/PlayerHardStoppingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Stopping/PlayerMediumStoppingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Stopping/PlayerMediumStoppingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Stopping/PlayerStoppingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Stopping/PlayerStoppingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/PlayerMovementState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/PlayerMovementState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Colliders/PlayerCapsuleColliderUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Colliders/PlayerCapsuleColliderUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Colliders/CapsuleColliderUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Colliders/CapsuleColliderUtility.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +80,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Animations/PlayerAnimationData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Colliders/PlayerTriggerColliderData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Airborne/PlayerFallData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Grounded/Landing/PlayerRollData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/Landing/PlayerLandingState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations/PlayerAnimationEventTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Colliders/PlayerCapsuleColliderUtility.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -52,28 +100,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "AddLandingState",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "UnrealLinkOptionsId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AddAnimations&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;UnrealLinkOptionsId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\18523\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\18523\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\18523\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\18523\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\18523\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\18523\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="F:\Program Files\UnityEditor\2022.3.0f1c1\Editor\Unity.exe" />
@@ -123,6 +171,8 @@
       <workItem from="1689592744937" duration="54000" />
       <workItem from="1689592818088" duration="7683000" />
       <workItem from="1689608125144" duration="5936000" />
+      <workItem from="1689652478024" duration="14814000" />
+      <workItem from="1689738293572" duration="1175000" />
     </task>
     <servers />
   </component>
