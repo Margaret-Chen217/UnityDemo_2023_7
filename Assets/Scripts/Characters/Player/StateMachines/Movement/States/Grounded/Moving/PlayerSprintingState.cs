@@ -26,6 +26,7 @@ public class PlayerSprintingState : PlayerMovingState
     public override void Enter()
     {
         base.Enter();
+        StartAnimation(stateMachine.Player.AnimationData.SprintParameterHash);
         stateMachine.ReusableData.MovementSpeedModifier = sprintData.SpeedModifier;
         stateMachine.ReusableData.CurrentJumpForce = airborneData.JumpData.StrongForce;
 
@@ -33,6 +34,7 @@ public class PlayerSprintingState : PlayerMovingState
 
         startTime = Time.time;
     }
+    
 
     public override void Update()
     {
@@ -56,6 +58,8 @@ public class PlayerSprintingState : PlayerMovingState
     public override void Exit()
     {
         base.Exit();
+        
+        StopAnimation(stateMachine.Player.AnimationData.SprintParameterHash);
 
         if (shouldResetSprintState)
         {

@@ -19,9 +19,16 @@ public class PlayerFallingState : PlayerAirborneState
     public override void Enter()
     {
         base.Enter();
+        StartAnimation(stateMachine.Player.AnimationData.FallParameterHash);
         playerPositionOnEnter = stateMachine.Player.transform.position;
         stateMachine.ReusableData.MovementSpeedModifier = 0f;
         ResetVerticalVelocity();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.FallParameterHash);
     }
 
 
@@ -43,8 +50,9 @@ public class PlayerFallingState : PlayerAirborneState
     protected override void OnContactWithGround(Collider collider)
     {
         //TODO:添加坠落伤害
+        
         //开始falling高度减去接触地面时的高度
-        float fallDistance = Mathf.Abs(playerPositionOnEnter.y - stateMachine.Player.transform.position.y);
+        float fallDistance = playerPositionOnEnter.y - stateMachine.Player.transform.position.y;
         Debug.Log($"Fall Distance = {fallDistance}");
 
         //LightLanding

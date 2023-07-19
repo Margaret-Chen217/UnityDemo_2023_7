@@ -18,9 +18,17 @@ public class PlayerRollingState : PlayerLandingState
     public override void Enter()
     {
         base.Enter();
+        
+        StartAnimation(stateMachine.Player.AnimationData.RollParameterHash);
         stateMachine.ReusableData.MovementSpeedModifier = rollData.SpeedModifier;
 
         stateMachine.ReusableData.ShouldSprint = false;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.RollParameterHash);
     }
 
     /// <summary>

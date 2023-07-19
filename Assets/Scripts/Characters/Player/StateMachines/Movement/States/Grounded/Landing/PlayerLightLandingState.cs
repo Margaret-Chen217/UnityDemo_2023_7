@@ -38,4 +38,17 @@ public class PlayerLightLandingState : PlayerLandingState
     }
 
     #endregion
+    
+    /// <summary>
+    /// 解决player在物体边缘加速下滑
+    /// </summary>
+    public override void PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
+        if (!IsMovingHorizongtally())
+        {
+            return;
+        }
+        ResetVelocity();
+    }
 }

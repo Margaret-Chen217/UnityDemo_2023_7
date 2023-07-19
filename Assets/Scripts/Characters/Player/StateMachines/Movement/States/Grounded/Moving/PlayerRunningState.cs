@@ -18,9 +18,16 @@ public class PlayerRunningState : PlayerMovingState
     public override void Enter()
     {
         base.Enter();
+        StartAnimation(stateMachine.Player.AnimationData.RunParameterHash);
         stateMachine.ReusableData.MovementSpeedModifier = movementData.RunData.SpeedModifier;
         stateMachine.ReusableData.CurrentJumpForce = airborneData.JumpData.MediumForce;
         startTime = Time.time;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.RunParameterHash);
     }
 
     public override void Update()

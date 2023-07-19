@@ -18,7 +18,14 @@ public class PlayerGroundedState : PlayerMovementState
     public override void Enter()
     {
         base.Enter();
+        StartAnimation(stateMachine.Player.AnimationData.GroundParameterHash);
         UpdateShoudSprintState();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.GroundParameterHash);
     }
 
 
@@ -104,7 +111,7 @@ public class PlayerGroundedState : PlayerMovementState
         Vector3 groundColliderBoxCenterInWorldSpace = groundCheckCollider.bounds.center;
 
         Collider[] overlappedGroundColliders = Physics.OverlapBox(groundColliderBoxCenterInWorldSpace,
-            groundCheckCollider.bounds.extents, groundCheckCollider.transform.rotation, stateMachine.Player.LayerData.GroundLayer, QueryTriggerInteraction.Ignore);
+            stateMachine.Player.ColliderUtility.TriggerColliderData.GroundCheckColliderExtents, groundCheckCollider.transform.rotation, stateMachine.Player.LayerData.GroundLayer, QueryTriggerInteraction.Ignore);
 
         return overlappedGroundColliders.Length > 0;
     }

@@ -4,21 +4,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+[Serializable]
+public class Health
 {
-    public Slider HealthBarUI;
+    [field: SerializeField] public Slider HealthBarUI;
 
-    [SerializeField]
-    private int maxHealthValue = 100;
-    public int healthValue { get; private set; }
+    [field: SerializeField] public int maxHealthValue { get; private set; } = 100;
 
-    void Start()
+    [field: SerializeField] public int healthValue { get; private set; }
+
+    public void Initialize()
     {
         healthValue = 90;
-        Debug.Log("1111 " + healthValue/maxHealthValue);
-        SetBarValue(HealthBarUI, (float)healthValue/maxHealthValue);
+        Debug.Log("1111 " + healthValue / maxHealthValue);
+        SetBarValue(HealthBarUI, (float)healthValue / maxHealthValue);
     }
-    
+
 
     private void SetBarValue(Slider slider, float val)
     {
@@ -34,7 +35,7 @@ public class Health : MonoBehaviour
         {
             healthValue += val;
             healthValue = Math.Clamp(healthValue, 0, 100);
-            SetBarValue(HealthBarUI, (float)healthValue/maxHealthValue);
+            SetBarValue(HealthBarUI, (float)healthValue / maxHealthValue);
             Debug.LogFormat("true Health {0}", healthValue);
             return true;
         }

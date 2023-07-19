@@ -191,6 +191,17 @@ public class PlayerMovementState : IState
 
     #region ReusableMethod
 
+    protected void StartAnimation(int animationHash)
+    {
+        Debug.Log($"Start Animation: {animationHash}");
+        stateMachine.Player.Animator.SetBool(animationHash, true);
+    }
+    
+    protected void StopAnimation(int animationHash)
+    {
+        Debug.Log($"StopAnimation: {animationHash}");
+        stateMachine.Player.Animator.SetBool(animationHash, false);
+    }
     protected void SetBaseRotationData()
     {
         stateMachine.ReusableData.RotationData = movementData.BaseRotationData;
@@ -248,15 +259,21 @@ public class PlayerMovementState : IState
         return new Vector3(0f, stateMachine.Player.Rigidbody.velocity.y, 0f);
     }
 
-    private Vector3 GetMovementInputDirection()
+    protected Vector3 GetMovementInputDirection()
     {
         return new Vector3(stateMachine.ReusableData.MovementInput.x, 0f, stateMachine.ReusableData.MovementInput.y);
     }
 
-    protected float GetMovementSpeed()
+    protected float GetMovementSpeed(bool shouldConsiderSlopes = true)
     {
-        return movementData.BaseSpeed * stateMachine.ReusableData.MovementSpeedModifier *
-               stateMachine.ReusableData.MovementOnSlopesSpeedModifier;
+        float movementSpeed = movementData.BaseSpeed * stateMachine.ReusableData.MovementSpeedModifier;
+
+        if (shouldConsiderSlopes)
+        {
+            movementSpeed *= stateMachine.ReusableData.MovementOnSlopesSpeedModifier;
+        }
+
+        return movementSpeed;
     }
 
     /// <summary>

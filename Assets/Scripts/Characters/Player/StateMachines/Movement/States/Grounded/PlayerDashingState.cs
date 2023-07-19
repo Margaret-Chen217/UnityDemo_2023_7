@@ -26,16 +26,16 @@ public class PlayerDashingState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-        
+        StartAnimation(stateMachine.Player.AnimationData.DashParameterHash);
         stateMachine.ReusableData.MovementSpeedModifier = dashData.SpeedModifier;
         stateMachine.ReusableData.CurrentJumpForce = airborneData.JumpData.StrongForce;
 
         stateMachine.ReusableData.RotationData = dashData.RotationData;
-        
-        AddForceOnTransitionFromStationaryState();
+
+        Dash();
 
         shouldKeepRotating = stateMachine.ReusableData.MovementInput != Vector2.zero;
-        
+
         UpdateConsecutiveDashes();
         startTime = Time.time;
     }
@@ -43,6 +43,7 @@ public class PlayerDashingState : PlayerGroundedState
     public override void Exit()
     {
         base.Exit();
+        StopAnimation(stateMachine.Player.AnimationData.DashParameterHash);
         SetBaseRotationData();
     }
 
@@ -53,8 +54,8 @@ public class PlayerDashingState : PlayerGroundedState
         {
             return;
         }
+
         RotateTowardsTargetRotation();
-        
     }
 
     public override void OnAnimationTransitionEvent()
@@ -65,7 +66,7 @@ public class PlayerDashingState : PlayerGroundedState
             stateMachine.ChangeState(stateMachine.HardStoppingState);
             return;
         }
-        
+
         //运动状态
         stateMachine.ChangeState(stateMachine.SprintingState);
     }
@@ -89,8 +90,9 @@ public class PlayerDashingState : PlayerGroundedState
         if (consecutiveDashedUsed >= dashData.ConsecutiveDashesLimitAmount)
         {
             consecutiveDashedUsed = 0;
-            
-            stateMachine.Player.Input.DisableActionFor(stateMachine.Player.Input.PlayerActions.Dash, dashData.DashLimitReachedCooldown);
+
+            stateMachine.Player.Input.DisableActionFor(stateMachine.Player.Input.PlayerActions.Dash,
+                dashData.DashLimitReachedCooldown);
         }
     }
 
@@ -103,34 +105,35 @@ public class PlayerDashingState : PlayerGroundedState
         return Time.time < startTime + dashData.TimeToBeConsideredConsecutive;
     }
 
-    private void AddForceOnTransitionFromStationaryState()
+    private void Dash()
     {
+        //idling状态到dash: 设置速度
+        Vector3 dashDirection = stateMachine.Player.transform.forward;
+
+        dashDirection.y = 0f;
+
+        UpdateTargetRotation(dashDirection, false);
+
         //moving状态到dash：增加speedmodifier
         if (stateMachine.ReusableData.MovementInput != Vector2.zero)
         {
-            return;
+            UpdateTargetRotation(GetMovementInputDirection());
+
+            dashDirection = GetTargetRotationDirection(stateMachine.ReusableData.CurrentTargetRotation.y);
         }
 
-        //idling状态到dash: 设置速度
-        Vector3 characterRotationDirection = stateMachine.Player.transform.forward;
-
-        characterRotationDirection.y = 0f;
-
-        UpdateTargetRotation(characterRotationDirection, false);
-
-        stateMachine.Player.Rigidbody.velocity = characterRotationDirection * GetMovementSpeed();
+        stateMachine.Player.Rigidbody.velocity = dashDirection * GetMovementSpeed(false);
     }
 
     #endregion
-    
-    #region  Reusable Method
+
+    #region Reusable Method
 
     protected override void AddInputActionCallbacks()
     {
         base.AddInputActionCallbacks();
         stateMachine.Player.Input.PlayerActions.Movement.performed += OnMovementPerformed;
     }
-
 
 
     protected override void RemoveInputActionCallbacks()
@@ -149,20 +152,16 @@ public class PlayerDashingState : PlayerGroundedState
     /// <param name="context"></param>
     protected override void OnMovementCanceled(InputAction.CallbackContext context)
     {
-       
     }
 
     protected override void OnDashStarted(InputAction.CallbackContext context)
     {
-        
     }
-    
+
     private void OnMovementPerformed(InputAction.CallbackContext context)
     {
         shouldKeepRotating = true;
     }
 
     #endregion
-
-
 }
