@@ -14,7 +14,7 @@ namespace Inventory.Model.ItemModifiers
         /// <returns></returns>
         public override bool AffectCharacter(GameObject character, float val)
         {
-            Health health = character.GetComponent<Health>();
+            Health health = character.GetComponent<Player>().Health;
             if (health != null)
             {
                 bool res = health.AddHealth((int)val);

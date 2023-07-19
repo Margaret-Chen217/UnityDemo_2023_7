@@ -18,7 +18,7 @@ namespace PickUpSystem
         {
             itemsButtonDictionary = new Dictionary<Item, PickUpButton>();
 
-            detectTrigger = transform.Find("DetectCollider").GetComponent<TriggerDetection>();
+            detectTrigger = GetComponentInChildren<TriggerDetection>();
             detectTrigger.OnCollisionEnter_Action += detectTrigger_OnCollisionEnter;
             detectTrigger.OnCollisionExit_Action += detectTrigger_OnCollisionExit;
         }
