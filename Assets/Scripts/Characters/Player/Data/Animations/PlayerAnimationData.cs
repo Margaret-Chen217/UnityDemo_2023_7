@@ -6,15 +6,17 @@ using UnityEngine;
 [Serializable]
 public class PlayerAnimationData
 {
-    [Header("State Group Parameter Names")]
-    [SerializeField] private string groundParameterName = "Grounded";
+    [Header("State Group Parameter Names")] [SerializeField]
+    private string groundParameterName = "Grounded";
+
     [SerializeField] private string movingParameterName = "Moving";
     [SerializeField] private string stoppingParameterName = "Stopping";
     [SerializeField] private string landingParameterName = "Landing";
     [SerializeField] private string airborneParameterName = "Airborne";
 
-    [Header("Grounded Parameter Names")]
-    [SerializeField] private string idleParameterName = "isIdling";
+    [Header("Grounded Parameter Names")] [SerializeField]
+    private string idleParameterName = "isIdling";
+
     [SerializeField] private string dashParameterName = "isDashing";
     [SerializeField] private string walkParameterName = "isWalking";
     [SerializeField] private string runParameterName = "isRunning";
@@ -24,16 +26,16 @@ public class PlayerAnimationData
     [SerializeField] private string rollParameterName = "isRolling";
     [SerializeField] private string hardLandParameterName = "isHardLanding";
 
-    [Header("Airborne Parameter Names")] 
-    [SerializeField] private string fallParameterName = "isFalling";
-    
+    [Header("Airborne Parameter Names")] [SerializeField]
+    private string fallParameterName = "isFalling";
+
     public int GroundParameterHash { get; private set; }
     public int MovingParameterHash { get; private set; }
     public int StoppingParameterHash { get; private set; }
     public int LandingParameterHash { get; private set; }
     public int AirborneParameterHash { get; private set; }
-    
-    
+
+
     public int IdleParameterHash { get; private set; }
     public int DashParameterHash { get; private set; }
     public int WalkParameterHash { get; private set; }
@@ -61,20 +63,6 @@ public class PlayerAnimationData
         HardStopParameterHash = Animator.StringToHash(hardStopParameterName);
         RollParameterHash = Animator.StringToHash(rollParameterName);
         HardLandParameterHash = Animator.StringToHash(hardLandParameterName);
-        FallParameterHash = Animator.StringToHash(fallParameterName); 
-        
-        Debug.Log($"GroundParameterHash : {groundParameterName}");
-        Debug.Log($"MovingParameterHash : {movingParameterName}");
-        Debug.Log($"StoppingParameterHash : {stoppingParameterName}");
-        Debug.Log($"LandingParameterHash : {landingParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
-        // Debug.Log($"GroundParameterHash : {groundParameterName}");
+        FallParameterHash = Animator.StringToHash(fallParameterName);
     }
-    
 }

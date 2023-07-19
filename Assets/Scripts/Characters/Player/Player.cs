@@ -7,9 +7,9 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInput))]
 public class Player : MonoBehaviour
 {
-    // [field: Header("Properties")]
-    // [field: SerializeField]
-    // public Health Health { get; private set; }
+    [field: Header("Properties")]
+    [field: SerializeField]
+    public Health Health { get; private set; }
 
     [field: Header("Reference")]
     [field: SerializeField]
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
         movementStateMachine = new PlayerMovementStateMachine(this);
         MainCameraTransform = Camera.main.transform;
         AnimationData.Initialize();
-        // Health.Initialize();
+        Health.Initialize();
     }
 
     private void OnValidate()

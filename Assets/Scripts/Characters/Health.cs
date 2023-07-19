@@ -16,14 +16,12 @@ public class Health
     public void Initialize()
     {
         healthValue = 90;
-        Debug.Log("1111 " + healthValue / maxHealthValue);
         SetBarValue(HealthBarUI, (float)healthValue / maxHealthValue);
     }
 
 
     private void SetBarValue(Slider slider, float val)
     {
-        Debug.Log("val = " + val);
         slider.value = val;
     }
 

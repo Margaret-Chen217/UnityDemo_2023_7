@@ -193,13 +193,13 @@ public class PlayerMovementState : IState
 
     protected void StartAnimation(int animationHash)
     {
-        Debug.Log($"Start Animation: {animationHash}");
+        //Debug.Log($"Start Animation: {animationHash}");
         stateMachine.Player.Animator.SetBool(animationHash, true);
     }
     
     protected void StopAnimation(int animationHash)
     {
-        Debug.Log($"StopAnimation: {animationHash}");
+        //Debug.Log($"StopAnimation: {animationHash}");
         stateMachine.Player.Animator.SetBool(animationHash, false);
     }
     protected void SetBaseRotationData()
