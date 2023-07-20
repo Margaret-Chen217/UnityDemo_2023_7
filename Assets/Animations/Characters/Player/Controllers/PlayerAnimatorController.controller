@@ -514,6 +514,12 @@ AnimatorStateMachine:
   m_EntryTransitions:
   - {fileID: -3687347277350865079}
   m_StateMachineTransitions:
+  - first: {fileID: 2592726343148407972}
+    second:
+    - {fileID: -3761144936047711629}
+    - {fileID: -4381462571976144489}
+    - {fileID: 7288393122413560081}
+    - {fileID: -4172724527784175957}
   - first: {fileID: 797398082278065773}
     second:
     - {fileID: 99558572633617194}
@@ -525,12 +531,6 @@ AnimatorStateMachine:
     - {fileID: -3461225188868798192}
     - {fileID: -4056091874284895760}
     - {fileID: 6473304596642253539}
-  - first: {fileID: 2592726343148407972}
-    second:
-    - {fileID: -3761144936047711629}
-    - {fileID: -4381462571976144489}
-    - {fileID: 7288393122413560081}
-    - {fileID: -4172724527784175957}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 60, y: 290, z: 0}
   m_EntryPosition: {x: 60, y: -200, z: 0}
@@ -689,7 +689,7 @@ AnimatorState:
   - {fileID: 7014071072146648998}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
+  m_IKOnFeet: 1
   m_WriteDefaultValues: 1
   m_Mirror: 0
   m_SpeedParameterActive: 0
@@ -872,7 +872,7 @@ AnimatorState:
   - {fileID: 5712107496393807935}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
+  m_IKOnFeet: 1
   m_WriteDefaultValues: 1
   m_Mirror: 0
   m_SpeedParameterActive: 0
@@ -1000,7 +1000,7 @@ AnimatorController:
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_DefaultWeight: 0
-    m_IKPass: 0
+    m_IKPass: 1
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
 --- !u!1109 &99558572633617194
@@ -1272,7 +1272,7 @@ AnimatorState:
   - {fileID: -7292984149608516722}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
+  m_IKOnFeet: 1
   m_WriteDefaultValues: 1
   m_Mirror: 0
   m_SpeedParameterActive: 0
@@ -1325,7 +1325,7 @@ AnimatorState:
   - {fileID: -6367169231046031669}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
+  m_IKOnFeet: 1
   m_WriteDefaultValues: 1
   m_Mirror: 0
   m_SpeedParameterActive: 0
