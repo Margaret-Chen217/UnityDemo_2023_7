@@ -5,157 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb47dffc-0e65-4eac-838a-deb6bfbf6655" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun/Character@Firing Rifle (1).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun/Character@Firing Rifle (1).fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun/Firing Rifle 1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun/Firing Rifle 1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun/Firing Rifle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Gun/Firing Rifle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Clips/States/Attack/Sword.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers/FireTest.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers/FireTest.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Audio/SFX_Assault Single Shot.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Audio/SFX_Assault Single Shot.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Audio/clip audio mixer.mixer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Audio/clip audio mixer.mixer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/Dust.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/Dust.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/FlashMuzzleAlpha.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/FlashMuzzleAlpha.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/GlowDotAlpha.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/GlowDotAlpha.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/M4 Assault Rifle Scope.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/M4 Assault Rifle Scope.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/M4 Assault Rifle.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/M4 Assault Rifle.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/MuzzleSniperAlpha.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/MuzzleSniperAlpha.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/SoftGlow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Materials/SoftGlow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Models/Assault_Rifle_M4_with_scope.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Models/Assault_Rifle_M4_with_scope.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs/Assault_Rifle_M4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs/Assault_Rifle_M4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs/Assault_Rifle_M4_with_scope.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs/Assault_Rifle_M4_with_scope.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs/VFX_M4 Muzzle Flash.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Prefabs/VFX_M4 Muzzle Flash.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Scripts/GunfireController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Scripts/GunfireController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/Dust.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/Dust.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/FlashMuzzle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/FlashMuzzle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/GlowOrb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/GlowOrb.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/MuzzleSniper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/MuzzleSniper.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/SoftGlow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/SoftGlow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/rifle_dif_01b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/rifle_dif_01b.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/rifle_dif_01e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/rifle_dif_01e.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/rifle_scope_dif.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Textures/rifle_scope_dif.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Variant.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Variant.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Decal.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Decal/Texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Decal/Texture/bulletdecal01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Decal/Texture/bulletdecal01.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Decal/bulletDecal01.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Decal/bulletDecal01.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletDecal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletDecal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/target.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/target.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/New Material 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/New Material 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/New Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/New Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/target.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/target.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/wood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/Resouces/targetTexture/wood.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/target Variant.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/SceneObject/target Variant.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/BulletDecal.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/BulletDecal.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/IKTest.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/IKTest.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/InventorySystem.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/InventorySystem.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MovementSystem.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/MovementSystem.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations/IK.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations/IK/IKTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Animations/IK/IKTest.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/BulletDecal/ShootingDetect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/BulletDecal/ShootingDetect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Colliders/isGroundTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Colliders/isGroundTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ActiveStateToggler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ActiveStateToggler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ApplicationManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ApplicationManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ChangeColor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ChangeColor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/DragMe.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/DragMe.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/DragPanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/DragPanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/DropMe.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/DropMe.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/PanelManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/PanelManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ResizePanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ResizePanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ScrollDetailTexture.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ScrollDetailTexture.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ShowSliderValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/ShowSliderValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/TiltWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Scripts/TiltWindow.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers/PlayerAnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Characters/Player/Controllers/PlayerAnimatorController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimTestScene 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimTestScene 1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimTestScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AnimTestScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item/Prefabs/Croissant_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Item/Prefabs/Croissant_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item/Resources/Models/Apple_Red_Half.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Item/Resources/Models/Apple_Red_Half.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IKTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IKTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraZoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerFallingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Airborne/PlayerFallingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/BulletDecal/ShootingDetect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/BulletDecal/ShootingDetect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Model/EdibleItemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Model/EdibleItemSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Model/ItemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Model/ItemSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Model/WeaponItemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Model/WeaponItemSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +30,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a543fc358460497cbcbd51737090d7761fc00/31/58cdf9db/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a543fc358460497cbcbd51737090d7761fc00/58/85ff63de/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a655008de92846458baa16d876fb23c4171c00/5e/0cdea21c/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Scripts/GunfireController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Animations/PlayerAnimationData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Colliders/PlayerTriggerColliderData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -179,7 +42,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Colliders/PlayerCapsuleColliderUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/BulletDecal/ShootingDetect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Colliders/isGroundTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -199,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TestBulletDecal&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AddAttackState&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -269,7 +134,8 @@
       <workItem from="1689745936481" duration="5823000" />
       <workItem from="1689770204147" duration="6217000" />
       <workItem from="1689781015065" duration="2211000" />
-      <workItem from="1689822778901" duration="1316000" />
+      <workItem from="1689822778901" duration="5300000" />
+      <workItem from="1689845420842" duration="7020000" />
     </task>
     <servers />
   </component>

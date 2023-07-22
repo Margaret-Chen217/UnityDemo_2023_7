@@ -1,16 +1,18 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Inventory.Model
 {
     [CreateAssetMenu(fileName = "WeaponItemSO", menuName = ("ScriptableObject/WeaponItemSO"))]
-        
-    public class WeaponItemSO : ItemSO,  IItemAction, IDropItem, IDestroyableItem
+    public class WeaponItemSO : ItemSO, IItemAction, IDropItem, IDestroyableItem
     {
         public string ActionName => "Equip";
-        
+
         public AudioClip actionSFX { get; private set; }
-        
+
+        private float yOffset = 0f;
+
         /// <summary>
         /// 为了在面版中不删除
         /// </summary>
@@ -30,15 +32,16 @@ namespace Inventory.Model
                 isSuccess = true;
                 return false;
             }
+
             isSuccess = false;
             return false;
         }
 
 
-        public bool Drop(GameObject character, ItemSO inventoryItem)
+        public bool Drop(Player player, ItemSO inventoryItem)
         {
             //TODO:需要判定是否正在使用
-            WeaponItemSO weapon = character.GetComponent<AgentWeapon>().weapon;
+            WeaponItemSO weapon = player.gameObject.GetComponent<AgentWeapon>().weapon;
             if (weapon != null)
             {
                 if (weapon == this)
@@ -47,7 +50,10 @@ namespace Inventory.Model
                     return false;
                 }
             }
-            Instantiate(inventoryItem.ItemPrefab);
+
+            Vector3 playerPoint = player.gameObject.transform.position;
+            Vector3 instantialPoint = new Vector3(playerPoint.x, playerPoint.y + 2, playerPoint.z);
+            Instantiate(inventoryItem.ItemPrefab, instantialPoint, Quaternion.identity);
             return true;
         }
     }
