@@ -4795,6 +4795,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba34b5fa6968eed4e9c68a43cd6953a2, type: 3}
+--- !u!114 &938200197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5059345796047252002, guid: 1005c08c9e2319040a4d0709da26f01c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1207238820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1069254525
 Mesh:
   m_ObjectHideFlags: 0
@@ -5734,6 +5746,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.16862746
       objectReference: {fileID: 0}
+    - target: {fileID: 2957299038056188819, guid: 1005c08c9e2319040a4d0709da26f01c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -163
+      objectReference: {fileID: 0}
     - target: {fileID: 3713990801703983192, guid: 1005c08c9e2319040a4d0709da26f01c,
         type: 3}
       propertyPath: m_Name
@@ -6668,8 +6685,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607730749}
+  - component: {fileID: 1607730750}
   m_Layer: 0
-  m_Name: Target
+  m_Name: Net
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6690,6 +6708,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1607730750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607730748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c884b4b47cd50354f81603b2f3c546b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 938200197}
 --- !u!43 &1763157120
 Mesh:
   m_ObjectHideFlags: 0
