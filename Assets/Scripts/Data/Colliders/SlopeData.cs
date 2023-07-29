@@ -12,7 +12,7 @@ public class SlopeData
 
     [field: SerializeField]
     [field: Range(0f, 5f)]
-    public float FloatRayDistance { get; private set; } = 2f;
+    public float FloatRayDistance { get; private set; } = 10f;
 
     [field: SerializeField]
     [field: Range(0f, 50f)]

@@ -6,13 +6,14 @@ namespace Inventory.UI
     {      
         [SerializeField] private Canvas canvas;
         [SerializeField] private Camera mainCamera;
-        [SerializeField] private UIInventoryItem item;
+        [SerializeField] public UIInventoryItem item;
 
         public void Awake()
         {
             canvas = transform.root.GetComponent<Canvas>();
             mainCamera = Camera.main;
-            item = GetComponentInChildren<UIInventoryItem>();
+            //build报错
+            //item = GetComponentInChildren<UIInventoryItem>();
         }
 
         public void SetData(Sprite sprite, int count)

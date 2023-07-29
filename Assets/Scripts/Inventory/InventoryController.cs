@@ -68,7 +68,7 @@ namespace Inventory
                 IDropItem dropItem = inventoryItem.item as IDropItem;
                 if (dropItem != null)
                 {
-                    bool actionResult = dropItem.Drop(this.gameObject, inventoryItem.item);
+                    bool actionResult = dropItem.Drop(this.GetComponent<Player>(), inventoryItem.item);
                     if (actionResult)
                     {
                         UpdateInventoryUI(inventoryItem, itemIndex);

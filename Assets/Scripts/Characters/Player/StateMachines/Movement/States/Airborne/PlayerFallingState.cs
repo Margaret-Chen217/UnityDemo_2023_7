@@ -53,7 +53,7 @@ public class PlayerFallingState : PlayerAirborneState
         
         //开始falling高度减去接触地面时的高度
         float fallDistance = playerPositionOnEnter.y - stateMachine.Player.transform.position.y;
-        Debug.Log($"Fall Distance = {fallDistance}");
+        //Debug.Log($"Fall Distance = {fallDistance}");
 
         //LightLanding
         if (fallDistance < fallData.MinimunDistanceToBeConsideredHardFall)

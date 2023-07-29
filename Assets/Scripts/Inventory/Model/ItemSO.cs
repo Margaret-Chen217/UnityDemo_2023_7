@@ -55,7 +55,7 @@ namespace Inventory.Model
 
     public interface IDropItem
     {
-        bool Drop(GameObject character, ItemSO inventoryItemItem);
+        bool Drop(Player player, ItemSO inventoryItemItem);
     }
 
 }
