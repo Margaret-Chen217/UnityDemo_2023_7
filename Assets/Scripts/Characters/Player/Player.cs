@@ -63,6 +63,10 @@ public class Player : MonoBehaviour
         MainCameraTransform = Camera.main.transform;
         AnimationData.Initialize();
         Health.Initialize();
+        
+        
+        ColliderUtility.Initialize(gameObject);
+        ColliderUtility.CalculateCapsuleColliderDimensions();
     }
 
     private void Start()
