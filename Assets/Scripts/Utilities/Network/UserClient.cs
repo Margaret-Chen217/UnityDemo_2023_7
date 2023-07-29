@@ -31,50 +31,43 @@ public class Message
         this.type = type;
         this.info = info;
     }
+
+    public void Print()
+    {
+        Debug.Log($"Type: {type}, Info{info}");
+    }
 }
 
-
-public class UserClient : MonoBehaviour
+[Serializable]
+public class UserClient
 {
-    public Button button;
-
     private Socket socket;
 
-    private void Awake()
+    public void Initialze()
     {
-        button.onClick.AddListener(delegate { OnNetworkButtonClick(); });
-    }
-
-    void Start()
-    {
-    }
-
-    private void OnNetworkButtonClick()
-    {
-        if (socket == null)
+        try
         {
-            try
-            {
-                socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-                socket.Connect("127.0.0.1", 8888);
-
-                Debug.Log("Connected to Server");
-
-                PlayerInfo p = new PlayerInfo("Margaret", transform.position);
-                Debug.Log(p);
-                string str = JsonConvert.SerializeObject(p);
-                byte[] bytes = System.Text.Encoding.Default.GetBytes(str);
-                socket.Send(bytes);
-            }
-            catch (Exception exception)
-            {
-                Debug.Log("Not Found Server");
-            }
+            socket.Connect("127.0.0.1", 8888);
+            Listener.startListen(socket);
+            Debug.Log("Connected to Server");
         }
-        else
+        catch (Exception exception)
         {
-            socket = null;
+            Debug.Log("Not Found Server");
+        }
+    }
+
+    public void SendMessageToServer(Message message)
+    {
+        //message.Print();
+        //Debug.Log("SendMessageToServer");
+        string str = JsonConvert.SerializeObject(message);
+        byte[] bytes = System.Text.Encoding.Default.GetBytes(str);
+        if (socket != null && socket.Connected)
+        {
+            socket.Send(bytes);
         }
     }
 }

@@ -5,21 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb47dffc-0e65-4eac-838a-deb6bfbf6655" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/UI/Textures/icons8-people-64.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/UI/Textures/icons8-people-64.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerControl.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerControl.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/UI/LookAtCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/UI/LookAtCamera.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Character/Player/PlayerOnlineInfoSO.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Character/Player/PlayerOnlineInfoSO.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player/OnlinePlayer.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayerPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayerPool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/ScriptableObject/PlayerOnlineInfoSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/ScriptableObject/PlayerOnlineInfoSO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/Listener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/Listener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UpdatePlayerLabel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Variant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Variant.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player/OnlinePlayer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character/Player.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ClientTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ClientTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/UI/LookAtCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/UI/LookAtCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UpdatePlayerLabel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +41,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a543fc358460497cbcbd51737090d7761fc00/31/58cdf9db/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a543fc358460497cbcbd51737090d7761fc00/58/85ff63de/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a655008de92846458baa16d876fb23c4171c00/5e/0cdea21c/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a655008de92846458baa16d876fb23c4171c00/fe/f2cf2888/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BigRookGames/_AssetPacks/Stylized Weapon Pack/M4 Scoped Assault Rifle/Scripts/GunfireController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayerPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Animations/PlayerAnimationData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/Colliders/PlayerTriggerColliderData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Data/States/Airborne/PlayerFallData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,7 +54,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Characters/Player/Utilities/Colliders/PlayerCapsuleColliderUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/BulletDecal/ShootingDetect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Colliders/isGroundTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Network/Listener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/GUI/TestListBuilder/ResultSummarizer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/GUI/TestListBuilder/TestTreeViewBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_TextUtilities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "2a5f63c6",
+    "git-widget-placeholder": "NetworkTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
