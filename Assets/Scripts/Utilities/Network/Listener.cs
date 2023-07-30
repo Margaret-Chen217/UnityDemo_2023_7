@@ -55,7 +55,7 @@ public class Listener : MonoBehaviour
 
             if (flag)
             {
-                Debug.Log($"message type: {msg.type}");
+                //Debug.Log($"message type: {msg.type}");
                 switch (msg.type)
                 {
                     case "AllPlayerInfo":

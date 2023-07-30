@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
     private UpdatePlayerLabel playerName;
 
     private bool isOnlineGame = false;
-    public float onlineSendCD = 0.5f;
+    public float onlineSendCD = 1f/20f;
 
     [field: SerializeField] public PlayerLayerData LayerData { get; private set; }
     public PlayerInput Input { get; private set; }
