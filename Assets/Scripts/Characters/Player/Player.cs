@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
     private UpdatePlayerLabel playerName;
 
     private bool isOnlineGame = false;
-    public float onlineSendCD = 0.5f;
+    public float onlineSendCD = 1f/20f;
 
     [field: SerializeField] public PlayerLayerData LayerData { get; private set; }
     public PlayerInput Input { get; private set; }
@@ -175,10 +175,9 @@ public class Player : MonoBehaviour
 
     public Message UpdatePlayerPosition()
     {
-        Debug.Log($"playername: {PlayerOnlineData.playerName}");
         PlayerInfo playerInfo = new PlayerInfo(PlayerOnlineData.playerName, transform.position);
-        Debug.Log($"Playerinfo: {playerInfo}");
-        Message message = new Message("UpdatePosition", JsonConvert.SerializeObject(playerInfo));
+        Message message = new Message("UpdatePlayerInfo", JsonConvert.SerializeObject(playerInfo));
+        Debug.Log($"Message in Player Send: {message}");
         return message;
     }
 }

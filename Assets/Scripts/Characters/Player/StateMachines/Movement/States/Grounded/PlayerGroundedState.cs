@@ -58,46 +58,12 @@ public class PlayerGroundedState : PlayerMovementState
 
     private void FloatCapsule()
     {
-        Debug.Log("Float Capsule: ");
-        
-        if (stateMachine.Player.ColliderUtility == null)
-        {
-            Debug.Log("ColliderUtility == null");
-        }
-
-        if (stateMachine.Player.ColliderUtility.CapsuleColliderData.Collider == null)
-        {
-            Debug.Log("Collider == null");
-        }
-        
         Vector3 capsuleColliderCenterInWorldSpace =
             stateMachine.Player.ColliderUtility.CapsuleColliderData.Collider.bounds.center;
-        Debug.Log("Here1");
-        //Ray downwardsRayFromCapsuleCenter = new Ray(capsuleColliderCenterInWorldSpace, Vector3.down);
-        //Debug.Log($"IsRayExist : {downwardsRayFromCapsuleCenter}");
         RaycastHit hit;
-        Debug.Log("Here2");
-        // if (Physics.Raycast(downwardsRayFromCapsuleCenter, out hit, slopeData.FloatRayDistance,
-        //         stateMachine.Player.LayerData.GroundLayer, QueryTriggerInteraction.Collide))
-        if (capsuleColliderCenterInWorldSpace == null)
-        {
-            Debug.Log("capsuleColliderCenterInWorldSpace is null");
-        }
-        Debug.Log("Here3");
-        if (slopeData == null)
-        {
-            Debug.Log("slopeData is null");
-        }
-        Debug.Log("Here4");
-        if (stateMachine.Player.LayerData == null)
-        {
-            Debug.Log("layerData is null");
-        }
-        Debug.Log("Here5");
         if (Physics.Raycast(capsuleColliderCenterInWorldSpace, Vector3.down, out hit, slopeData.FloatRayDistance,
                 stateMachine.Player.LayerData.GroundLayer, QueryTriggerInteraction.Collide))
         {
-            Debug.Log("Float Capsule : Rayhit");
             float groundAngle = Vector3.Angle(hit.normal, -Vector3.down);
 
             float slopeSpeedModifier = SetSlopeSpeedModifierOnAngle(groundAngle);
@@ -200,20 +166,15 @@ public class PlayerGroundedState : PlayerMovementState
 
     protected override void OnContactWithGroundExited(Collider collider)
     {
-        Debug.Log("OnContactWithGroundExited");
+        //Debug.Log("OnContactWithGroundExited");
         base.OnContactWithGroundExited(collider);
-        Debug.Log($"Collider : {collider != null}");
         if (IsThereGroundUnderneat())
         {
             return;
         }
-        Debug.Log("here1");
+
         //射线检测，离开地面一定距离，才认为进入Falling状态
         //角色碰撞器中心
-        Debug.Log($"Player : {stateMachine.Player == null}");
-        Debug.Log($"ColliderUtility : {stateMachine.Player.ColliderUtility == null}");
-        Debug.Log($"CapsuleColliderData : {stateMachine.Player.ColliderUtility.CapsuleColliderData == null}");
-        Debug.Log($"Collider : {stateMachine.Player.ColliderUtility.CapsuleColliderData.Collider == null}");
         Vector3 capsuleColliderCenterInWorldSpace =
             stateMachine.Player.ColliderUtility.CapsuleColliderData.Collider.bounds.center;
         //射线 origin:碰撞器底部 direction:down

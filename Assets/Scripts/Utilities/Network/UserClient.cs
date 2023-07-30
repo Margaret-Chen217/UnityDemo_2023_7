@@ -32,9 +32,10 @@ public class Message
         this.info = info;
     }
 
-    public void Print()
+    public override string ToString()
     {
-        Debug.Log($"Type: {type}, Info{info}");
+        string str = ($"{this.type}, {this.info} ");
+        return str;
     }
 }
 
@@ -64,9 +65,10 @@ public class UserClient
         //message.Print();
         //Debug.Log("SendMessageToServer");
         string str = JsonConvert.SerializeObject(message);
-        byte[] bytes = System.Text.Encoding.Default.GetBytes(str);
+        byte[] bytes = System.Text.Encoding.Default.GetBytes(str + "&");
         if (socket != null && socket.Connected)
         {
+            Debug.Log($"Message in UserClient Send: {str}");
             socket.Send(bytes);
         }
     }

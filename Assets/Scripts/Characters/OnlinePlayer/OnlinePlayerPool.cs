@@ -9,7 +9,7 @@ using UnityEngine;
 public class OnlinePlayerPool : MonoBehaviour
 {
     public GameObject onlinePlayerPrefab;
-
+    public PlayerOnlineInfoSO CurrentPlayerData;
     private Dictionary<string, GameObject> onlinePlayerDic = new Dictionary<string, GameObject>();
 
     // Start is called before the first frame update
@@ -17,6 +17,10 @@ public class OnlinePlayerPool : MonoBehaviour
     {
         foreach (PlayerInfo playerInfo in playerInfoList)
         {
+            if (playerInfo.PlayerName == CurrentPlayerData.playerName)
+            {
+                continue;
+            }
             if (onlinePlayerDic.ContainsKey(playerInfo.PlayerName))
             {
                 onlinePlayerDic[playerInfo.PlayerName].transform.position =
