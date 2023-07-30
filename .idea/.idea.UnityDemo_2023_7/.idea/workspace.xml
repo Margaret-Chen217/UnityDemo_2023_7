@@ -8,21 +8,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityDemo_2023_7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddOns/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ClientTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ClientTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraZoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayerPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/OnlinePlayer/OnlinePlayerPool.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerGroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/Grounded/PlayerGroundedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Colliders/SlopeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/Colliders/SlopeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/UI/UIMouseFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/UI/UIMouseFollower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/PlayerMovementState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Player/StateMachines/Movement/States/PlayerMovementState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/Listener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/Listener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utilities/Network/UserClient.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +87,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$USER_HOME$/Desktop/OnlineTest10\UnityDemo.exe" />
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/OnlineTest11/UnityDemo.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\18523\Desktop\OnlineTest" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -160,6 +153,8 @@
       <workItem from="1690651680098" duration="983000" />
       <workItem from="1690653274913" duration="178000" />
       <workItem from="1690653590872" duration="2074000" />
+      <workItem from="1690684532234" duration="3687000" />
+      <workItem from="1690693775643" duration="498000" />
     </task>
     <servers />
   </component>
