@@ -36,7 +36,7 @@ public class CameraZoom : MonoBehaviour
     {
         if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
         {
-            Debug.Log("IsOnUI");
+            //Debug.Log("IsOnUI");
             return;
         }
 

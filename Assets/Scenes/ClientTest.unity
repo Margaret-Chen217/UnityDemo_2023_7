@@ -1592,6 +1592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onlinePlayerPrefab: {fileID: 3423952469154590622, guid: af6d67ff5de4487458fd3627b865b6dc,
     type: 3}
+  CurrentPlayerData: {fileID: 11400000, guid: b475eb140e1056349aef51dca90e6f5a, type: 2}
 --- !u!114 &510671730
 MonoBehaviour:
   m_ObjectHideFlags: 0

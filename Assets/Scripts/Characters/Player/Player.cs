@@ -175,10 +175,9 @@ public class Player : MonoBehaviour
 
     public Message UpdatePlayerPosition()
     {
-        Debug.Log($"playername: {PlayerOnlineData.playerName}");
         PlayerInfo playerInfo = new PlayerInfo(PlayerOnlineData.playerName, transform.position);
-        Debug.Log($"Playerinfo: {playerInfo}");
-        Message message = new Message("UpdatePosition", JsonConvert.SerializeObject(playerInfo));
+        Message message = new Message("UpdatePlayerInfo", JsonConvert.SerializeObject(playerInfo));
+        Debug.Log($"Message in Player Send: {message}");
         return message;
     }
 }

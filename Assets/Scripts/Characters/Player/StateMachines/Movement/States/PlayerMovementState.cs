@@ -38,14 +38,14 @@ public class PlayerMovementState : IState
 
     public virtual void Enter()
     {
-        Debug.Log($"Enter State: {GetType().Name}");
+        //Debug.Log($"Enter State: {GetType().Name}");
         AddInputActionCallbacks();
     }
 
 
     public virtual void Exit()
     {
-        Debug.Log($"Exit State: {GetType().Name}");
+        //Debug.Log($"Exit State: {GetType().Name}");
         RemoveInputActionCallbacks();
     }
 

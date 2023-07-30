@@ -68,6 +68,7 @@ public class UserClient
         byte[] bytes = System.Text.Encoding.Default.GetBytes(str + "&");
         if (socket != null && socket.Connected)
         {
+            Debug.Log($"Message in UserClient Send: {str}");
             socket.Send(bytes);
         }
     }
